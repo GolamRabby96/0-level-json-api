@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>JSON</h1>
+    <h2>javaScript Object notation</h2>
+
+    <script>
+        const user = {
+            id: 245,
+            name:'Masud',
+            friendAge : [12, 45, 50],
+            lover: {
+                name:'angel',
+                age:25,
+                sex:'female'
+            }
+        }
+        const userJson = JSON.stringify(user)
+        const jsonTo = JSON.parse(userJson);
+        console.log(userJson);
+        console.log(jsonTo);
+    </script>
+    // json just similer tupy of object .. nothing else
+</body>
+</html>
