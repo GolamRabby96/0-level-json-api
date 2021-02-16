@@ -34,27 +34,7 @@
 				})
 					.then((response) => response.json())
 					.then((data) => console.log(data));
-			}
-
-			function displayUser(users) {
-				const ul = document.getElementById("usersContainer");
-				const userNames = users.map((user) => user.name);
-				/*
-            const userNames = users.map(user => {
-                const li = document.createElement('li');
-                li.innerText = user.name;
-                ul.appendChild(li)
-            });*/
-
-				console.log("users", users);
-				for (let i = 0; i < userNames.length; i++) {
-					const user = userNames[i];
-					const li = document.createElement("li");
-					li.innerText = user;
-					ul.appendChild(li);
-				}
-				console.log(userNames);
-			}
+			} 
 		</script>
 	</body>
 </html>
